@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="UTF-8">
+        <title>MengerSponge_p5.js</title>
+        <script src="libraries/p5.js" type="text/javascript"></script>
+
+        <script src="libraries/p5.dom.js" type="text/javascript"></script>
+        <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+        <script src="sketch.js" type="text/javascript"></script>
+        <script src="box.js" type="text/javascript"></script>
+
+        <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+
+    </head>
+    <body>  
+    <div id="header">
+        
+  
+    <h1> Salary and Tax Calculator</h1>
+        <div id="navbar"> 
+            <ul> 
+                <li>Canada   |</li>
+                <li>Ontario     |</li>
+                <li>2018 Tables</li>
+            </ul>        
+        </div>        
+
+        
+    <div class="grid-container">
+        <div class="tile1">
+            <div id="boxA">
+                <h3>WHERE DO YOUR WORK?</h3>
+                    <div class="select">
+                    <select type="option" id="province">
+                    <option value1="BC"><h5>BC</h5></option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Quebec">Quebec</option>                                      
+                    </select>   
+                    </div>
+            </div>
+            <div id="boxAA">
+                <h3>TYPE YEARLY INCOME</h3>
+                    <input type="number" id="income" value="average annual income">              
+                    <div class="button">
+                    <button onclick="myFunction()" "myFunction2()" id="button" class="button" ></button></div>
+
+            </div> 
+        </div>    
+      <div class="tile2">
+        <div id="boxBBB">
+                <h5>DEDUCTIONS</h5>
+          </div>
+          <div id="boxAAA">
+                <table>
+                  <tr>
+                    <td><p1>SALARY</p1></td>
+                    <td><p1 id="demo5">0</p1></td>
+                  </tr>
+                  <tr>
+                    <td><p1>CPP</p1></td>
+                    <td><p1 id="demo">0</p1></td>
+                  </tr>
+                  <tr>
+                    <td><p1>EI</p1></td>
+                    <td><p1 id="demo2">0</p1></td>
+                  </tr>
+                  <tr>
+                    <td><p1>FEDERAL TAX</p1></td>
+                    <td><p1 id="demo3">0</p1></td>
+                  </tr>
+                  <tr>
+                    <td><p1>PROVINCIAL TAX</p1></td>
+                    <td><p1 id="demo4">0</p1></td>
+                  </tr>                
+                </table>     
+          </div>
+          <div id="boxC">
+                <table>
+                  <tr>
+                    <td><p1>TOTAL TAX</p1></td>
+                    <td><p1A id="demo6">0</p1A></td>
+                  </tr>
+                  <tr>
+                    <td><p1>NET PAY</p1></td>
+                    <td><p1A id="demo7">0</p1A></td>
+                  </tr>
+              </table>
+            </div>        
+        </div>      
+      <div class="tile3">
+        <div id="boxB">
+                <h5>CHART</h5>
+            </div>
+           <div id="boxD">
+            </div>
+           <div id="boxBB">
+            <div id="legend"> 
+        <ul> 
+            <li>TOTAL TAX</li>
+            <li>NET PAY</li>
+        </ul>        
+        </div>
+
+               
+            </div>
+        
+        </div>  
+    </div>
+
+        
+    <h1> Compare Locations</h1>
+
+<div id="navbar2"> 
+        <ul> 
+            <li>Low Taxes   |</li>
+            <li>Life Standart     |</li>
+            <li>Other</li>
+        </ul>        
+        </div>        
+        
+        
+    <div class="grid-container">
+        <div class="tile4">
+            <div id="boxA">
+            <div id="legend2"> 
+        <ul> 
+            <li>COUNTRY</li><br>
+            <li>TOTAL TAX</li><br>
+        </ul> 
+        </div>
+                
+            </div>
+            <div id="boxAA">
+            </div> 
+        </div>    
+      <div class="tile5">
+        <div id="boxBBBB">
+                <h6>CANADIAN MARKET</h6>
+          </div>
+          <div id="boxAAAA">
+                <table>
+                  <tr>
+                    <td><p2>BRITISH COLUMBIA</p2></td>
+                    <td><p2 id="demo9">7%</p2></td>
+                  </tr>
+                  <tr>
+                    <td><p2>ONTARIO</p2></td>
+                    <td><p2 id="demo10">9%</p2></td>
+                  </tr>
+                  <tr>
+                    <td><p2>QUEBEC</p2></td>
+                    <td><p2 id="demo11">6%</p2></td>
+                  </tr>
+                  <tr>
+                    <td><p2>ALBERTA</p2></td>
+                    <td><p2 id="demo11">6%</p2></td>
+                  </tr>
+                  <tr>
+                    <td><p2>NOVA SCOTIA</p2></td>
+                    <td><p2 id="demo12">13%</p2></td>
+                  </tr>                
+                </table>     
+          </div>
+          <div id="boxCC">
+                <table>
+                  <tr>
+                    <td><p2>CANADA-WIDE AVG TAX</p2></td>
+                    <td><p2A id="demo6">8%</p2A></td>
+                  </tr>
+                  <tr>
+                    <td><p2>CANADA-WIDE AVG PAY</p2></td>
+                    <td><p2A id="demo7">$76,000</p2A></td>
+                  </tr>
+              </table>
+            </div>        
+        </div>      
+      <div class="tile6">
+            <div id="boxCCC">
+            </div>
+            <div id="boxB">
+            </div>
+            <div id="boxAA">
+            </div> 
+        
+        </div>  
+    </div>        
+        
+        </div>          
+    </body>
+</html>
