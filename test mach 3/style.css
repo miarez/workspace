@@ -9,6 +9,15 @@ body {
     
 }
 
+#piechart {
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-bottom: 200px;
+    margin: none;
+    
+}
+
+
 #navbar ul {
     padding: 5px;
     list-style-type: none;
@@ -67,41 +76,62 @@ body {
 }
 
 #legend2 ul {
-    padding-top: 25px;
+    float: left;
+    padding-top: 30px;
+    padding-left: 20px;
+    width: auto;
     list-style-type: none;
-    text-align: left;
+    text-align: center;
     background-color: 255;
     margin: 10px;
-    border-radius: 4px;
    
 }
 
 #legend2 ul li {
-    padding-left: 20px;  
     color: grey;
     font-size: 16px;
+    text-align: center;
     font-family: helvetica;
     display: inline;
    
 }
 
 #legend3 ul {
+    padding-top: 30px;
+    float: right;
+    padding-right: 15px;
+    width: auto;
+    margin: auto auto auto auto; 
     list-style-type: none;
-    text-align: right;
-    display: inline;
-    object-position: right;
-
-   
+    text-align: center;
+    margin: 10px;
 }
 
 #legend3 ul li {
-
     color: grey;
     font-size: 16px;
     font-family: helvetica;
     display: inline;
+    text-align: center;
+}
 
-   
+#legend4 ul {
+    padding-top: 130px;
+    float: center;
+    padding-right: 45px;
+    width: auto;
+    margin: auto auto auto auto; 
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+}
+
+#legend4 ul li {
+    color: grey;
+    font-size: 16px;
+    font-family: helvetica;
+    display: inline;
+    text-align: center;
 }
 
 
@@ -119,6 +149,9 @@ select[type=option] {
     
 }
 
+
+
+
 input[type=number] {
     width: 70%;
     padding: 12px 20px;
@@ -129,6 +162,8 @@ input[type=number] {
     border-radius: 4px;
     text-align: center;
     background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
     box-sizing: border-box;
 }
 
@@ -247,6 +282,37 @@ p2A {
 }
     
 .grid-container>div {
+    box-sizing: content-box;    
+    width: 100%;
+    height: 100%;
+    padding: 0px;    
+    border: none;
+    box-shadow: 0px 0px #888888;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding:0px 0;
+  font-size: 10px;
+    display: block;
+    margin: auto auto 0px;
+}
+
+.grid-container2 {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    width: 1300px;
+    height: auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 450px;
+    grid-gap: 10px;
+    background-color: none;
+    padding: 0px;
+        margin: auto auto 0px;
+}
+    
+.grid-container2>div {
     box-sizing: content-box;    
     width: 100%;
     height: 100%;
